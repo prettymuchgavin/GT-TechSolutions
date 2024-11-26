@@ -2,19 +2,33 @@ header {
     background-color: green;
 }
 
+
 body h1 {
-    padding: 0 10%;
+    padding: 0 5%;
     font-size: 70px;
+}
+
+.homeContent {
+    position: absolute;
 }
 
 .homeContent p {
     display: inline;
     vertical-align: top;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .homeContent img{
     float: left;
+}
+
+.deals {
+    top: 100%;
+    position:absolute;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
 header img {
@@ -37,12 +51,8 @@ ul {
     padding: 0 20%;
 }
 
-li {
-    float: left;
-}
-
-
 ul li{
+    float: left;
     display: inline;
     list-style-type: none;
     margin: 0;
@@ -54,7 +64,7 @@ li a{
     text-decoration: none;
     text-align: center;
     padding: 0px 30px;
-    font-size: 30px;
+    font-size: 20px;
     display: block;
     width: 50%;
 }
