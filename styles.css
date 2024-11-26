@@ -3,7 +3,18 @@ header {
 }
 
 body h1 {
+    padding: 0 10%;
     font-size: 70px;
+}
+
+.homeContent p {
+    display: inline;
+    vertical-align: top;
+    font-size: 40px;
+}
+
+.homeContent img{
+    float: left;
 }
 
 header img {
@@ -15,6 +26,15 @@ header img {
 .navigation {
     background-color: darkgreen;
     height: 50px;
+}
+
+ul {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.homeImage {
+    padding: 0 20%;
 }
 
 li {
@@ -30,9 +50,10 @@ ul li{
 }
 
 li a{
+    width: 150px;
     text-decoration: none;
     text-align: center;
-    padding: 0px 16px;
+    padding: 0px 30px;
     font-size: 30px;
     display: block;
     width: 50%;
