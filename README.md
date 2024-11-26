@@ -1,2 +1,2 @@
-# GT-TechSolutions
-Tech Support Site for Final Project
+# GT TechSolutions
+Tech support website for final WEBD project.
