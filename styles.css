@@ -1,9 +1,13 @@
 header {
-    background-color: green;
+    background-image: url("images/headerBG.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 footer {
     text-align: center;
+    background-color: green;
 }
 
 body h1 {
@@ -12,25 +16,34 @@ body h1 {
 }
 
 .homeContent {
-    position: absolute;
+    position: relative;
+    width: 100%;
 }
 
-.homeContent p {
-    display: inline;
+.homeContent .about {
+    z-index: 1;
+}
+
+.homeContent .about p {
     vertical-align: top;
     font-size: 25px;
 }
 
-.homeContent img{
+.homeContent .about img{
     float: left;
+    width: 60%;
 }
 
 .deals {
-    bottom: 0;
-    position:absolute;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    text-align: center;
     width: 100%;
     padding: 10px;
+}
+
+.dealsBanners {
     text-align: center;
 }
 
@@ -85,7 +98,6 @@ li a{
     border: 1px solid;
     width: 100%;
     padding: 10px;
-    
 }
 
 
