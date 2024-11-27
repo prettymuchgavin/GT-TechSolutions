@@ -1,3 +1,5 @@
+/*HEADER CSS*/
+
 header {
     background-image: url("images/headerBG.jpg");
     background-repeat: no-repeat, repeat;
@@ -5,9 +7,47 @@ header {
     background-position: center;
 }
 
+header img {
+    width: 15%;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 footer {
     text-align: center;
     background-color: green;
+}
+
+.navigation {
+    background-color: darkgreen;
+    height: 50px;
+}
+
+ul {
+    width: 750px;
+    margin: 0 auto;
+}
+
+
+ul li{
+    float: left;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 30px;
+    font-size: 20px;
+    display: block;
+    width: 50%;
+    font-size: 30px;
 }
 
 body h1 {
@@ -15,6 +55,7 @@ body h1 {
     font-size: 70px;
 }
 
+/*HOME CSS*/
 .homeContent {
     position: relative;
     width: 100%;
@@ -47,44 +88,12 @@ body h1 {
     text-align: center;
 }
 
-header img {
-    width: 10%;
-    background-color: greenyellow;
-    border-radius: 30px;
-}
 
-.navigation {
-    background-color: darkgreen;
-    height: 50px;
-}
-
-ul {
-    width: 750px;
-    margin: 0 auto;
-}
 
 .homeImage {
     padding: 0 20%;
 }
 
-ul li{
-    float: left;
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li a{
-    width: 150px;
-    text-decoration: none;
-    text-align: center;
-    padding: 0px 30px;
-    font-size: 20px;
-    display: block;
-    width: 50%;
-    font-size: 30px;
-}
 
 
 /* STAFF CSS */
@@ -148,4 +157,40 @@ li a{
 .service {
     display: inline-block;
     padding: 30px;
+}
+
+/*CONTACT CSS*/
+.contactContent {
+    position:relative;
+}
+
+.defaultContact {
+    text-align: center;
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+
+.contactForm label{
+    width: 100%;
+    font-size: larger;
+    text-align: center;
+}
+
+.contactForm input{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.contactForm input [name=problem] {
+    padding: 50px 10px;
+}
+
+.contactForm [type=submit] {
+    background-color: green;
+    padding: 20px 10px;
 }
