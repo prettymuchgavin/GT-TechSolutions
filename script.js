@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fname = document.getElementById("name");
     const email = document.getElementById("email");
+    const location = document.getElementById("location");
     const phone = document.getElementById("phone");
     const problem = document.getElementById("problem");
 
@@ -16,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
             email.style.color = "red";
         } else {
             email.style.color = "black";
+        }
+        if (location.value.trim() === '') {
+            location.style.color = "red";
+        } else {
+            location.style.color = "black";
         }
         if (phone.value.trim() !== '' && !validatePhone(phone.value)) {
             phone.style.color = "red";
@@ -54,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
             isValid = false;
         } else if (!validateEmail(email.value)) {
             alert('Please Enter A Valid Email.');
+            isValid = false;
+        }
+        if (location.value.trim() === '') {
+            alert('Location Field Can Not Be Empty.');
             isValid = false;
         }
         if (phone.value.trim() !== '' && !validatePhone(phone.value)) {
